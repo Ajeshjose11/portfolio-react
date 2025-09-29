@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Box, Typography, Button, Avatar, Stack } from "@mui/material";
 import SocialLinks from "../components/SocialLinks";
 import { useNavigate } from "react-router-dom";
-import Propic from "../assets/images/Propic.jpg";
+import profile from "../assets/images/profile.jpg";
 
 function Home({ darkMode }) {
   const navigate = useNavigate();
@@ -22,7 +22,7 @@ function Home({ darkMode }) {
       <Container maxWidth="md" sx={{ textAlign: "center", mt: 2 }}>
         <Avatar
           alt="Ajesh Jose"
-          src={Propic}
+          src={profile}
           sx={{
             width: 160,
             height: 160,

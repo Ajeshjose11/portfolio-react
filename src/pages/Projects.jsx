@@ -10,10 +10,10 @@ import {
 import ProjectCard from "../components/ProjectCard";
 import bankImg from "../assets/images/bank.png";
 import movieImg from "../assets/images/movie.png";
-import empImg from "../assets/images/EmpDetails.png";
-import foodImg from "../assets/images/OnlineFood.png";
+import empImg from "../assets/images/employee.png";
+import foodImg from "../assets/images/food.png";
 import todoImg from "../assets/images/todolist.png";
-import travelImg from "../assets/images/TravelBlog.png";
+import travelImg from "../assets/images/travelblog.png";
 import discountImg from "../assets/images/discount.png";
 import ageImg from "../assets/images/agecalculator.png";
 import furnitureImg from "../assets/images/furniture.png";
