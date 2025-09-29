@@ -12,7 +12,7 @@ import bankImg from "../assets/images/bank.png";
 import movieImg from "../assets/images/movie.png";
 import empImg from "../assets/images/EmpDetails.png";
 import foodImg from "../assets/images/OnlineFood.png";
-import todoImg from "../assets/images/To-DoList.png";
+import todoImg from "../assets/images/todolist.png";
 import travelImg from "../assets/images/TravelBlog.png";
 import discountImg from "../assets/images/discount.png";
 import ageImg from "../assets/images/agecalculator.png";
