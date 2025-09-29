@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html, body {
+  overflow-x: hidden; 
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background: linear-gradient(90deg,#65018a,#8800ff);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+  /* background: linear-gradient(267deg,#da7c25 0.36%,#b923e1 102.06%); */
+  background-color: rgb(202, 140, 244);
+  border-radius: 8px;
+}
+
