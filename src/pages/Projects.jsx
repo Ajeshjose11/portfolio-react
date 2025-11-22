@@ -13,16 +13,25 @@ import movieImg from "../assets/images/movie.png";
 import empImg from "../assets/images/employee.png";
 import foodImg from "../assets/images/food.png";
 import todoImg from "../assets/images/todolist.png";
-import travelImg from "../assets/images/travelblog.png";
+import travelimg from "../assets/images/travelblog.png";
 import discountImg from "../assets/images/discount.png";
 import ageImg from "../assets/images/agecalculator.png";
 import furnitureImg from "../assets/images/furniture.png";
+import photoImg from "../assets/images/photography.png";
 
 const allProjects = [
   {
+    title: "Photography Portfolio",
+    desc: "Photography Portfolio made in React with Node.js",
+    image: photoImg,
+    techStack: ["React", "Node.js"],
+    github: "https://github.com/Ajeshjose11/portfolio-react",
+    live: "https://photography-portfolio-frontend-cyan.vercel.app/"
+  },
+  {
     title: "Online Bank",
     desc: "A secure, modern online banking platform built with the MERN stack.",
-    image:  bankImg ,
+    image: bankImg,
     techStack: ["Javascript", "Tailwind"],
     github: "https://github.com/Ajeshjose11/onlinebanking",
     live: "https://onlinebankingwebsite.vercel.app/"
@@ -30,7 +39,7 @@ const allProjects = [
   {
     title: "Movie Search",
     desc: "An app displaying movie details using React and public APIs.",
-    image:  movieImg,
+    image: movieImg,
     techStack: ["Javascript", "Tailwind", "API"],
     github: "https://github.com/Ajeshjose11/MovieDetails",
     live: "https://movie-details-nu.vercel.app/"
@@ -38,7 +47,7 @@ const allProjects = [
   {
     title: "Employee Details",
     desc: "Employee management web app storing data persistently.",
-    image:  empImg ,
+    image: empImg,
     techStack: ["Javascript", "Tailwind"],
     github: "https://github.com/Ajeshjose11/employeedetailsstorage",
     live: "https://employeedetailsstorage.vercel.app/"
@@ -46,7 +55,7 @@ const allProjects = [
   {
     title: "Food Website",
     desc: "A responsive food ordering website using React and Tailwind CSS.",
-    image:  foodImg ,
+    image: foodImg,
     techStack: ["HTML", "CSS"],
     github: "https://github.com/Ajeshjose11/onlinefoodwebsite",
     live: "https://onlinefoodwebsite.vercel.app/"
@@ -54,7 +63,7 @@ const allProjects = [
   {
     title: "To-Do List",
     desc: "Task management app built with React.",
-    image:  todoImg,
+    image: todoImg,
     techStack: ["Javascript", "Tailwind"],
     github: "https://github.com/Ajeshjose11/Task-Manager",
     live: "https://task-manager-zeta-brown.vercel.app/"
@@ -62,7 +71,7 @@ const allProjects = [
   {
     title: "Travel Blog",
     desc: "Travel blogging platform made with React and CSS.",
-    image:  travelImg,
+    image: travelimg,
     techStack: ["HTML", "Bootstrap"],
     github: "https://github.com/Ajeshjose11/travelblog",
     live: "https://travelblog-virid.vercel.app/"
@@ -71,7 +80,7 @@ const allProjects = [
   {
     title: "Discount Calulator",
     desc: "Discount Calculator made with React and Javascript",
-    image: discountImg ,
+    image: discountImg,
     techStack: ["CSS", "Javascript", "React"],
     github: "https://github.com/Ajeshjose11/Discount-Calculator",
     live: "https://discount-calculator-iota.vercel.app/"
@@ -80,7 +89,7 @@ const allProjects = [
   {
     title: "Age Calulator",
     desc: "Age Calculator made with React and Javascript",
-    image:  ageImg ,
+    image: ageImg,
     techStack: ["CSS", "Javascript", "React"],
     github: "https://github.com/Ajeshjose11/agecalculator",
     live: "https://agecalculator-oqyj.vercel.app/"
@@ -89,11 +98,11 @@ const allProjects = [
   {
     title: "Furniture Website",
     desc: "Online Furniture Website made with HTML and Bootstrap",
-    image:  furnitureImg ,
+    image: furnitureImg,
     techStack: ["HTML", "Bootstrap"],
     github: "https://github.com/Ajeshjose11/online-furniture",
     live: "https://online-furniture-delta.vercel.app/"
-  },
+  }
 ];
 
 const filterOptions = [
@@ -143,20 +152,20 @@ function Projects({ darkMode }) {
     >
       <Container maxWidth="lg">
         <Typography
-                align="center"
-                variant="h3"
-                sx={{
-                  color: "transparent",
-                  fontWeight: 700,
-                  mb: 6,
-                  background: "linear-gradient(90deg, #B923E1, #DA7C25)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  userSelect: "none"
-                }}
-              >
-               Projects
-              </Typography>
+          align="center"
+          variant="h3"
+          sx={{
+            color: "transparent",
+            fontWeight: 700,
+            mb: 6,
+            background: "linear-gradient(90deg, #B923E1, #DA7C25)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            userSelect: "none"
+          }}
+        >
+          Projects
+        </Typography>
         <Stack
           direction="row"
           spacing={2}

@@ -28,8 +28,7 @@ function validate(form) {
   return (
     form.name.length > 1 &&
     /\S+@\S+\.\S+/.test(form.email) &&
-    form.subject.length > 1 &&
-    form.message.length > 5
+    form.message.length > 2
   );
 }
 
