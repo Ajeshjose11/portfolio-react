@@ -18,6 +18,7 @@ import discountImg from "../assets/images/discount.png";
 import ageImg from "../assets/images/agecalculator.png";
 import furnitureImg from "../assets/images/furniture.png";
 import photoImg from "../assets/images/photography.png";
+import farmmart from "../assets/images/farmmart.png";
 
 const allProjects = [
   {
@@ -94,7 +95,6 @@ const allProjects = [
     github: "https://github.com/Ajeshjose11/agecalculator",
     live: "https://agecalculator-oqyj.vercel.app/"
   },
-
   {
     title: "Furniture Website",
     desc: "Online Furniture Website made with HTML and Bootstrap",
@@ -102,6 +102,14 @@ const allProjects = [
     techStack: ["HTML", "Bootstrap"],
     github: "https://github.com/Ajeshjose11/online-furniture",
     live: "https://online-furniture-delta.vercel.app/"
+  },
+  {
+    title: "Farm Mart",
+    desc: "It is a MERN-based platform for real-time farm product bidding with secure admin–user and admin–farmer communication.",
+    image: farmmart,
+    techStack: ["React", "Node.js"],
+    github: "https://github.com/Ajeshjose11/FarmMart-frontend",
+    live: "https://farm-mart-frontend.vercel.app/"
   }
 ];
 
@@ -112,6 +120,7 @@ const filterOptions = [
   "Bootstrap",
   "Tailwind",
   "React",
+  "Node.js",
   "API"
 ];
 
