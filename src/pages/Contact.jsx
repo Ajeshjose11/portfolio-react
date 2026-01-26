@@ -15,6 +15,8 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import emailjs from "emailjs-com";
+
 
 const SOCIALS = [
   { icon: <GitHubIcon />, url: "https://github.com/Ajeshjose11" },
@@ -39,18 +41,39 @@ function Contact({ darkMode }) {
   const onChange = (e) =>
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
-    if (validate(form)) {
+
+    if (!validate(form)) {
+      setAlert({ type: "error", msg: "Fill all fields correctly." });
+      return;
+    }
+
+    try {
+      await emailjs.send(
+        import.meta.env.VITE_EMAIL_SERVICE,
+        import.meta.env.VITE_EMAIL_TEMPLATE,
+        {
+          from_name: form.name,
+          reply_to: form.email,
+          message: form.message
+        },
+        import.meta.env.VITE_EMAIL_PUBLIC
+      );
+
       setAlert({
         type: "success",
-        msg: "Message Sent. Will be in touch with you soon."
+        msg: "Message sent successfully."
       });
       setForm(initialForm);
-    } else {
-      setAlert({ type: "error", msg: "Fill all fields correctly." });
+    } catch (err) {
+      setAlert({
+        type: "error",
+        msg: "Failed to send message."
+      });
     }
   };
+
 
   return (
     <Box

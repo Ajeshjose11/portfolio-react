@@ -51,7 +51,7 @@ function Home({ darkMode }) {
             mb: 2
           }}
         >
-          ME(A)RN Stack Developer
+          MERN Stack Developer
         </Typography>
         <Typography
           variant="body1"

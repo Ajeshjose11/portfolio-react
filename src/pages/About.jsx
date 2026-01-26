@@ -20,7 +20,11 @@ const skills = [
   "Bootstrap",
   "Tailwind",
   "JavaScript",
-  "React"
+  "React",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "Git"
 ];
 
 function About({ darkMode }) {
@@ -114,7 +118,7 @@ function About({ darkMode }) {
             </ListItemIcon>
             <ListItemText
               primary={<span style={{ fontSize: "22px", fontWeight: 600 }}>Internship</span>}
-              secondary={<span style={{ fontSize: "18px" }}>MEARN Stack Intern at Luminar Technolabs </span>}
+              secondary={<span style={{ fontSize: "18px" }}>MERN Stack Intern at Luminar Technolabs </span>}
 
             />
           </ListItem>

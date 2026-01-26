@@ -22,6 +22,14 @@ import farmmart from "../assets/images/farmmart.png";
 
 const allProjects = [
   {
+    title: "Farm Mart",
+    desc: "It is a full-stack website for real-time farm product bidding with secure communication.",
+    image: farmmart,
+    techStack: ["React", "Node.js"],
+    github: "https://github.com/Ajeshjose11/FarmMart-frontend",
+    live: "https://farm-mart-frontend.vercel.app/"
+  },
+  {
     title: "Photography Portfolio",
     desc: "Photography Portfolio made in React with Node.js",
     image: photoImg,
@@ -102,15 +110,8 @@ const allProjects = [
     techStack: ["HTML", "Bootstrap"],
     github: "https://github.com/Ajeshjose11/online-furniture",
     live: "https://online-furniture-delta.vercel.app/"
-  },
-  {
-    title: "Farm Mart",
-    desc: "It is a MERN-based platform for real-time farm product bidding with secure admin–user and admin–farmer communication.",
-    image: farmmart,
-    techStack: ["React", "Node.js"],
-    github: "https://github.com/Ajeshjose11/FarmMart-frontend",
-    live: "https://farm-mart-frontend.vercel.app/"
   }
+  
 ];
 
 const filterOptions = [
