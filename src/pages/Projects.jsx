@@ -19,6 +19,7 @@ import ageImg from "../assets/images/agecalculator.png";
 import furnitureImg from "../assets/images/furniture.png";
 import photoImg from "../assets/images/photography.png";
 import farmmart from "../assets/images/farmmart.png";
+import itineraryImg from "../assets/images/itineraryImg.png";
 
 const allProjects = [
   {
@@ -110,7 +111,15 @@ const allProjects = [
     techStack: ["HTML", "Bootstrap"],
     github: "https://github.com/Ajeshjose11/online-furniture",
     live: "https://online-furniture-delta.vercel.app/"
-  }
+  },
+  {
+  title: "AI Itinerary Planner",
+  desc: "An AI-powered travel itinerary planner",
+  image: itineraryImg,
+  techStack: ["Next.js", "React", "Python", "FastAPI", "AI Integration"],
+  github: "https://github.com/Ajeshjose11/ai-travel-planner",
+  live: "https://ai-travel-planner-mocha.vercel.app/"
+}
   
 ];
 
