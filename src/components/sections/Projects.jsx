@@ -12,7 +12,7 @@ import farmmart from "../../assets/images/farmmart.png";
 import photoImg from "../../assets/images/photography.png";
 import foodImg from "../../assets/images/food.png";
 import todoImg from "../../assets/images/todolist.png";
-import travelImg from "../../assets/images/travelblog.png";
+import travelImg from "../../assets/images/TravelBlog.png";
 import budgettracker from "../../assets/images/budgettracker.png";
 import ageImg from "../../assets/images/agecalculator.png";
 import furnitureImg from "../../assets/images/furniture.png";
