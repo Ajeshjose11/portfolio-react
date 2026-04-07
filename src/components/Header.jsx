@@ -137,7 +137,7 @@ function Header({ toggleTheme, darkMode }) {
         @media (max-width: 768px) {
           header {
             width: 95%;
-            padding: 4px 6px;
+            padding: 4px 8px;
             gap: 2px;
             bottom: 20px;
           }
@@ -147,17 +147,28 @@ function Header({ toggleTheme, darkMode }) {
           }
           header .contact-btn {
             padding: 8px !important;
-            min-width: 40px;
+            min-width: 38px;
+            height: 38px;
             display: flex;
             align-items: center;
-            justifyContent: center;
-            margin-left: 4px !important;
+            justify-content: center;
+            border-radius: 50% !important;
+            margin-left: 2px !important;
+            box-shadow: none !important;
           }
           header .contact-text {
             display: none !important;
           }
           header .contact-icon {
             display: block !important;
+          }
+          /* Hide divider on mobile to save space */
+          header div[style*="width: 1px"] {
+            display: none !important;
+          }
+          header button:last-child {
+             padding: 8px !important;
+             margin-left: 0 !important;
           }
         }
       `}</style>

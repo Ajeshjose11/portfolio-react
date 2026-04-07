@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -29,7 +29,7 @@ const getTheme = (darkMode) =>
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [imageTarget, setImageTarget] = useState('home');
-  const theme = getTheme(darkMode);
+  const theme = useMemo(() => getTheme(darkMode), [darkMode]);
   const { scrollYProgress } = useScroll();
  
   const scaleX = useSpring(scrollYProgress, {
@@ -79,7 +79,6 @@ function App() {
   }, [darkMode]);
 
   const toggleTheme = () => {
-    document.body.style.transition = "background-color 0.3s ease-in-out, filter 0.3s ease-in-out";
     setDarkMode((prev) => !prev);
   };
 
@@ -87,11 +86,12 @@ function App() {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const vh = window.innerHeight;
-      if (scrollY > vh * 0.4) {
-        setImageTarget('about');
-      } else {
-        setImageTarget('home');
-      }
+      const nextTarget = scrollY > vh * 0.4 ? 'about' : 'home';
+      
+      setImageTarget(prev => {
+        if (prev !== nextTarget) return nextTarget;
+        return prev;
+      });
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });

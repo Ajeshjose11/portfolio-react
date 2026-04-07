@@ -32,7 +32,7 @@ const About = ({ darkMode, imageTarget }) => {
     {
       icon: <Target size={20} />,
       title: 'Passionate',
-      content: 'Building efficient, AI-powered web solutions.',
+      content: 'Building scalable, AI-integrated web applications with modern full-stack technologies.',
     },
   ];
 
